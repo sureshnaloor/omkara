@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --color-primary: 59 130 246;   /* Blue-500 */
+    --color-secondary: 99 102 241; /* Indigo-500 */
+    --color-tertiary: 139 92 246;  /* Purple-500 */
+
+    /* Dark theme colors */
+    --color-primary-dark: 37 99 235;   /* Blue-600 */
+    --color-secondary-dark: 79 70 229; /* Indigo-600 */
+    --color-tertiary-dark: 124 58 237; /* Purple-600 */
+  }
+
+  .dark {
+    --color-primary: var(--color-primary-dark);
+    --color-secondary: var(--color-secondary-dark);
+    --color-tertiary: var(--color-tertiary-dark);
+  }
+}
